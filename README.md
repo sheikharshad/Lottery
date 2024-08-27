@@ -1,41 +1,57 @@
 # Lottery
 
 
-A) Tools Required
-Xcode - 15.4 or similar
+##A) Tools Required
+
+    Xcode: Version 15.4 or later
+
+##B) Installation Guide
+
+    Clone the Repository:
+    Take a checkout from Git.
+    Run the Project:
+    Open the project file in Xcode and run it.
+
+##C) Project Architecture
+  
+  The project follows the MVVM (Model-View-ViewModel) pattern combined with a Repository pattern.
+
+##D) Main Modules
+
+###1) LotteryTab
+
+This module is responsible for displaying lottery information.
+
+    Lottery List View:
+    Displays a list of lotteries retrieved from JSON or cache.
+    Lottery Details View:
+    Shows the details of each lottery. Users can swipe to navigate between different lotteries.
+
+###2) TicketTab
+
+    The TicketTab displays ticket information, where the numbers are generated randomly and checked to determine if the ticket is a winner.
+
+###3) Repository
+
+    The repository handles data fetching and provides it to the ViewModel.
+
+###4) Components
+
+    Contains reusable UI components.
 
 
-B) Installation guide
-  1) Take the checkout from git https://github.com/sheikharshad/Lottery
-  2) Run the project file in Xcode
+##E) Tests
+
+    Test cases are provided for the business logic.
 
 
-C) Project Main architeture
-The project is using MMVM + repository patter.  
+##F) Improvements
 
-
-D) Main Modules
-1) LotteryTab - 
-The lottery Tab is responsilbe to show the Lottery inforamtion.
-  a) Lottery List View show the List of lottery from JSON or cache.
-  b) Lottery details View is responsible to show the detail of every Lottery. We can also use aswipe gesture to navigate between different lotteries
-
-2) TicketTab
-The TicketTab show the ticket information. the numbers are generates randomly and matched if its a winner. 
-
-3) Repository
-The Repository is responsible to fetch the data and give to ViewModel.
-
-4) Components
- It contains all the common UI components to be re-usable.  
-
-4) Tests
-Test cases has been written for the business logic.
-
-Improvements 
-Framework could be used for StyleKit(all the styles of the application).
-Framework for Lottery SDK that keeps the repositry out of the app and make it modularise.
-Integrataion Tests could be added to make sure all modules are in place.
-
-
-
+    ###StyleKit Framework:
+    A framework could be created for managing all styles used in the application.
+    
+    ###Lottery SDK:
+    A framework for the Lottery SDK could modularize the repository, keeping it separate from the app.
+    
+    ###Integration Tests:
+    Adding integration tests would ensure that all modules work together correctly.

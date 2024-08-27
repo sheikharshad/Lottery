@@ -17,6 +17,7 @@
   The project follows the MVVM (Model-View-ViewModel) pattern combined with a Repository pattern.
 
   D) Main Modules
+  
     1) LotteryTab
 
       This module is responsible for displaying lottery information.
@@ -40,18 +41,18 @@
       Contains reusable UI components.
 
 
-    E) Tests
+  E) Tests
 
     Test cases are provided for the business logic.
 
 
-    F) Improvements
+  F) Improvements
 
-      StyleKit Framework:
-      A framework could be created for managing all styles used in the application.
+    StyleKit Framework:
+    A framework could be created for managing all styles used in the application.
     
-      Lottery SDK:
-      A framework for the Lottery SDK could modularize the repository, keeping it separate from the app.
+    Lottery SDK:
+    A framework for the Lottery SDK could modularize the repository, keeping it separate from the app.
     
-      Integration Tests:
-      Adding integration tests would ensure that all modules work together correctly.
+    Integration Tests:
+    Adding integration tests would ensure that all modules work together correctly.
